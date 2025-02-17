@@ -11,3 +11,8 @@ function toggleLanguage() {
         englishSchedule.style.display = "block";
     }
 }
+document.addEventListener("DOMContentLoaded", function () {
+    setTimeout(() => {
+        document.querySelector(".bubble-container").style.display = "none";
+    }, 10000); // تختفي الفقاعات بعد 10 ثوانٍ
+});
