@@ -111,8 +111,45 @@ footer {
 }
 
 .contact {
-    font-size: 12px;
+    outline: none;
+    text-decoration: none;
+    color: #ffd700;
 }
+
+/* فقاعات متحركة للخلفية */
+.bubble {
+    position: absolute;
+    bottom: -100px;
+    background-color: rgba(255, 215, 0, 0.4); /* لون ذهبي شفاف */
+    border-radius: 50%;
+    opacity: 1;
+    animation: bubbles 10s linear, fadeOut 2s ease-out 8s forwards;
+    box-shadow: 0px 0px 15px rgba(255, 215, 0, 0.6);
+    z-index: 5; /* التأكد أنها أمام الجدول */
+}
+
+/* حركة الفقاعات للأعلى */
+@keyframes bubbles {
+    0% { transform: translateY(0) scale(1); opacity: 1; }
+    50% { opacity: 0.8; }
+    100% { transform: translateY(-100vh) scale(1.2); opacity: 1; }
+}
+
+/* تأثير التلاشي بعد 8 ثوانٍ */
+@keyframes fadeOut {
+    0% { opacity: 1; }
+    100% { opacity: 0; visibility: hidden; }
+}
+
+/* أبعاد وسرعات مختلفة لكل فقاعة */
+.bubble:nth-child(1) { left: 5%; width: 40px; height: 40px; animation-duration: 12s; }
+.bubble:nth-child(2) { left: 15%; width: 60px; height: 60px; animation-duration: 14s; animation-delay: 1s; }
+.bubble:nth-child(3) { left: 30%; width: 30px; height: 30px; animation-duration: 10s; animation-delay: 2s; }
+.bubble:nth-child(4) { left: 45%; width: 50px; height: 50px; animation-duration: 13s; animation-delay: 3s; }
+.bubble:nth-child(5) { left: 60%; width: 70px; height: 70px; animation-duration: 15s; animation-delay: 4s; }
+.bubble:nth-child(6) { left: 75%; width: 35px; height: 35px; animation-duration: 11s; animation-delay: 5s; }
+.bubble:nth-child(7) { left: 90%; width: 55px; height: 55px; animation-duration: 13s; animation-delay: 6s; }
+
 
 /* Animated Background (Floating Bubbles) */
 @keyframes bubbles {
