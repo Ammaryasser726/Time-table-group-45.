@@ -1,132 +1,3 @@
-<!--
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lecture Schedule</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="bubbles">
-        <div class="bubble"></div>
-        <div class="bubble"></div>
-        <div class="bubble"></div>
-        <div class="bubble"></div>
-        <div class="bubble"></div>
-    </div>
-
-
-    <h2>Weekly Lecture Schedule</h2>
-    <table>
-        <thead>
-            <tr>
-                <th>Day</th>
-                <th>Time</th>
-                <th>Subject</th>
-                <th>Lecture Type</th>
-                <th>Attendance</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Monday</td>
-                <td>09:00 - 10:30</td>
-                <td>Philosophy</td>
-                <td>General Lecture</td>
-                <td><input type="checkbox" class="attendance" data-subject="philosophy_mon"></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td>11:10 - 12:40</td>
-                <td>Physiology</td>
-                <td>General Lecture</td>
-                <td><input type="checkbox" class="attendance" data-subject="physiology_mon"></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td>13:20 - 16:30</td>
-                <td>Russian Language</td>
-                <td>Private Lecture</td>
-                <td><input type="checkbox" class="attendance" data-subject="russian_mon"></td>
-            </tr>
-            <tr>
-                <td>Tuesday</td>
-                <td>09:00 - 10:30</td>
-                <td>Biochemistry</td>
-                <td>General Lecture</td>
-                <td><input type="checkbox" class="attendance" data-subject="biochemistry_tue"></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td>10:40 - 12:10</td>
-                <td>Microbiology</td>
-                <td>General Lecture</td>
-                <td><input type="checkbox" class="attendance" data-subject="microbiology_tue"></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td>12:50 - 16:00</td>
-                <td>Internal Medicine</td>
-                <td>Private Lecture</td>
-                <td><input type="checkbox" class="attendance" data-subject="medicine_tue"></td>
-            </tr>
-            <tr>
-                <td>Wednesday</td>
-                <td>09:00 - 12:10</td>
-                <td>Physiology</td>
-                <td>Private Lecture</td>
-                <td><input type="checkbox" class="attendance" data-subject="physiology_wed"></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td>12:20 - 15:30</td>
-                <td>Microbiology</td>
-                <td>Private Lecture</td>
-                <td><input type="checkbox" class="attendance" data-subject="microbiology_wed"></td>
-            </tr>
-            <tr>
-                <td>Thursday</td>
-                <td>08:30 - 10:00</td>
-                <td>Philosophy</td>
-                <td>Private Lecture</td>
-                <td><input type="checkbox" class="attendance" data-subject="philosophy_thu"></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td>10:10 - 11:40</td>
-                <td>Disaster Medicine</td>
-                <td>Private Lecture</td>
-                <td><input type="checkbox" class="attendance" data-subject="disaster_thu"></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td>12:30 - 15:40</td>
-                <td>Russian Language</td>
-                <td>Private Lecture</td>
-                <td><input type="checkbox" class="attendance" data-subject="russian_thu"></td>
-            </tr>
-            <tr>
-                <td>Friday</td>
-                <td>08:30 - 11:40</td>
-                <td>Public Health</td>
-                <td>Private Lecture</td>
-                <td><input type="checkbox" class="attendance" data-subject="health_fri"></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td>11:50 - 15:00</td>
-                <td>Biochemistry</td>
-                <td>Private Lecture</td>
-                <td><input type="checkbox" class="attendance" data-subject="biochemistry_fri"></td>
-            </tr>
-        </tbody>
-    </table>
-    
-    <script src="move.jss"></script>
-</body>
-</html>
--->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -139,15 +10,19 @@
 
 <body>
 
-<div class="bubble-container">
-    <div class="bubble"></div>
-    <div class="bubble"></div>
-    <div class="bubble"></div>
-    <div class="bubble"></div>
-    <div class="bubble"></div>
-    <div class="bubble"></div>
-    <div class="bubble"></div>
-</div>
+    <section class="bod">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </section>
+
     <!-- Container for the schedule and contact information -->
     <div class="container">
         <h1>Weekly Lecture Schedule</h1>
@@ -183,7 +58,7 @@
                     <tr>
                         <td>الاثنين</td>
                         <td>13:20 - 16:30</td>
-                        <td>اللغة الروسية</td>
+                        <td>اللغة الروسية</td>                      
                         <td>محاضرة خاصة</td>
                     </tr>
                     <tr>
@@ -302,7 +177,7 @@
                     <tr>
                         <td>Wednesday</td>
                         <td>09:00 - 12:10</td>
-                        <td>Physiology</td>
+                        <td class="">Physiology</td>
                         <td>Private Lecture</td>
                     </tr>
                     <tr>
@@ -348,7 +223,7 @@
         <!-- Contact Information -->
         <footer>
 
-            <a  target="_blank" href="https://chat.whatsapp.com/HxlFKMvawVL362Hr6prIgL">
+            <a target="_blank" href="https://chat.whatsapp.com/HxlFKMvawVL362Hr6prIgL">
                 <p class="contact">Contact Us</p>
             </a>
             </a>
